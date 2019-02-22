@@ -19,13 +19,14 @@ sebagai berikut:
 
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut
 disimpan pada file bernama password1.txt
--Menggunakan  
 
 b. Jika file password1.txt sudah ada maka password acak baru akan
 disimpan pada file bernama password2.txt dan begitu seterusnya.
 c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
 d. Password yang dihasilkan tidak boleh sama.
+
+![soal3](https://user-images.githubusercontent.com/34019306/53231992-b92d0e00-36bc-11e9-8d8a-9811b613a913.png)
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
