@@ -6,7 +6,7 @@ file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adala
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
 
-![soal1](https://github.com/clausaxon/SoalShift_modul1_C12/Images/Screenshot_from_2019-02-22_22-24-20.png)
+![soal1](https://user-images.githubusercontent.com/34019306/53231992-b92d0e00-36bc-11e9-8d8a-9811b613a913.png)
 -Saya menggunakan looping for karena saat saya lihat foldernya, isi filenya tidak lebih dari 97 image maka dari itu saya menggunakan parameter itu.
 -awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt.
 
