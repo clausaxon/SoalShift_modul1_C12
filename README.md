@@ -10,8 +10,8 @@ sehingga huruf kapital atau tidak, tidak menjadi masalah.
 ![5a - shift 1](https://user-images.githubusercontent.com/47876805/53219667-7571de80-3693-11e9-852f-599b239beb2d.png) 
 
 Untuk menampilkan string yang mengandung "cron" dan tidak mengandung string "sudo" maka dilakukan bash dengan cara 
-bash soal5.sh | grep 'cron', hasilnya akan seperti ini:
-![5a bash - shift 1](https://user-images.githubusercontent.com/47876805/53219666-7571de80-3693-11e9-8054-ddf44fc79a9f.png) 
+bash soal5.sh | grep cron, hasilnya akan seperti ini:
+![5a bash - shift 1 bener](https://user-images.githubusercontent.com/47876805/53220337-94be3b00-3696-11e9-8c00-ea067012ebd6.png) 
 
 b. Jumlah field (number of field) pada baris tersebut berjumlah kurang
 dari 13.
@@ -23,7 +23,7 @@ Ketika di bash maka hasilnya akan seperti ini:
 
 c. Masukkan record tadi ke dalam file logs yang berada pada direktori
 
-![5c - shift 1](https://user-images.githubusercontent.com/47876805/53219672-76a30b80-3693-11e9-9c3c-411e83351fcf.png) 
+![5c - shift 1](https://user-images.githubusercontent.com/47876805/53220338-9556d180-3696-11e9-920b-ba48a94b350c.png)
 
 Maka hasilnya akan terlihat terbentuk file bernama soal5.log yang berisi:
 ![5d log - shift 1](https://user-images.githubusercontent.com/47876805/53220093-51170180-3695-11e9-98b5-fd9faf935059.png)
