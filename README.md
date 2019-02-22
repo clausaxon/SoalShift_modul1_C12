@@ -53,7 +53,8 @@ Penjelasan:
 - head -n3 berarti mengambil data dari 3 baris pertama.
 - awk -F, '{print $2} berarti karena yang diminta tampilkan adalah produknya, maka yang dicetak hanya variabel j.
 
-Hasilnya akan seperti ini:
+Hasilnya dari no 2 akan seperti ini:
+
 ![2 bash - shift 1](https://user-images.githubusercontent.com/47876805/53234226-a1a45400-36c1-11e9-825c-36d2f11c5984.png)
 
 3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
