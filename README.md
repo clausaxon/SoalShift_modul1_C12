@@ -54,7 +54,7 @@ c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
 d. Password yang dihasilkan tidak boleh sama.
 
-![soal3](https://user-images.githubusercontent.com/34019306/53232200-2ccf1b00-36bd-11e9-9708-1634cf2865a3.png)
+![soal3](https://user-images.githubusercontent.com/34019306/53234202-981aec00-36c1-11e9-9202-ab9fb9f19277.png)
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
