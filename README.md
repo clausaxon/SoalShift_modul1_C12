@@ -11,7 +11,7 @@ Hint: Base64, Hexdump
 
 -awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt.
 
-2. Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
+2.Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
 untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.
 Laporan yang diminta berupa:
 
@@ -88,7 +88,7 @@ e. dan buatkan juga bash script untuk dekripsinya.
 ini adalah bash script untuk decrypt nya, perbedaan dari script encryptnya adalah pertukaraan posisi indexing pada sintaks tr agar bentuknya kembali seperti semula.
 
 
-5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
+5.Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
 
 a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”,
