@@ -18,6 +18,10 @@ Laporan yang diminta berupa:
 a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun
 2012.
 
+Syntax:
+awk -F ',' '{if($7=='2012') i[$1]+=$10} END{for (j in i)print j}' WA_Sales_Products_2012-14.csv | sort -nr | head -1 
+
+Penjelasan:
 - {if($7=='2012') i[$1]+=$10} berarti ketika tahun bernilai 2012, maka quantity setiap negara akan berada pada kolom ke-10.
 - {for (j in i)print j} berarti untuk variabel j disimpan di i lalu akan mencetak hasil dari variabel j.
 - sort -nr berarti akan mengurutkan dari yang terbesar ke terkecil.
@@ -26,6 +30,10 @@ a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun
 b. Tentukan tiga product line yang memberikan penjualan(quantity)
 terbanyak pada soal poin a.
 
+Syntax:
+awk -F ',' '{if($7 == "2012" && $1=="United States") i[$4]+=$10} END {for(j in i)print j}' WA_Sales_Products_2012-14.csv      | sort -nr | head -3
+
+Penjelasan:
 - {if($7 == "2012" && $1=="United States") i[$4]+=$10} berarti ketika tahun bernilai 2012 dan negara adalah United States, yang akan diletakkan pada kolom ke-10 dan disimpan dalam array.
 - for(j in i)print j} berarti variabel j disimpan di i lalu akan mencetak variabel j.
 - sort -nr berarti mengurutkan dari yang terbesar ke terkecil.
@@ -35,11 +43,18 @@ c. Tentukan tiga product yang memberikan penjualan(quantity)
 terbanyak berdasarkan tiga product line yang didapatkan pada soal
 poin b.
 
+Syntax:
+awk -F ',' '{if($7=="2012" && $1 == "United States" && ($4=="Personal Accessories" || $4=="Camping Equipment" || $4=="Outdoor Protection")) i[$6]+=$10;} END {for(j in i)print i[j] ","  j}' WA_Sales_Produts_2012-14.csv | sort -nr | head -n3 | awk -F, '{print $2}'
+
+Penjelasan:
 - i[$6]+=$10 berarti data akan diletakkan pada kolom ke-10 dan disimpan pada array. 
 - {for(j in i)print i[j] ","  j} berarti variabel j disimpan di i lalu mencetak untuk variabel i dan j.
 - sort -nr berarti mengurutkan data dari yang terbesar hingga terkecil.
 - head -n3 berarti mengambil data dari 3 baris pertama.
 - awk -F, '{print $2} berarti karena yang diminta tampilkan adalah produknya, maka yang dicetak hanya variabel j.
+
+Hasilnya akan seperti ini:
+![2 bash - shift 1](https://user-images.githubusercontent.com/47876805/53234226-a1a45400-36c1-11e9-825c-36d2f11c5984.png)
 
 3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password
@@ -54,7 +69,7 @@ c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
 d. Password yang dihasilkan tidak boleh sama.
 
-![soal3](https://user-images.githubusercontent.com/34019306/53234202-981aec00-36c1-11e9-9202-ab9fb9f19277.png)
+![soal3](https://user-images.githubusercontent.com/34019306/53232200-2ccf1b00-36bd-11e9-9708-1634cf2865a3.png)
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
