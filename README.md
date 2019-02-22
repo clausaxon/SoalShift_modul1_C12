@@ -1,4 +1,8 @@
 # SoalShift_modul1_C12
+crontab unutk no 1 dan 4
+
+![crontab](https://user-images.githubusercontent.com/34019306/53236266-72dcac80-36c6-11e9-981c-23b2322d4522.png)
+
 1.Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
 dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah
 nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh
