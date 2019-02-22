@@ -9,9 +9,15 @@ Hint: Base64, Hexdump
 ![soal1](https://user-images.githubusercontent.com/34019306/53231992-b92d0e00-36bc-11e9-8d8a-9811b613a913.png)
 -Saya menggunakan looping for karena saat saya lihat foldernya, isi filenya tidak lebih dari 97 image maka dari itu saya menggunakan parameter itu.
 
--awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt.
+-di dalam loop kita membuat variable nama yang isinya list nama file dan di pipe dengan awk
 
+-awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt dan NR nya sendiri untuk meng-access number of records.
 
+-lalu menggunakan base 64 agar file di decode dari base64 alphabet yang tidak jelas dan di reverse pada pipe sebelahnya yang berisikan sintaks hexdump.
+
+-loop selesai dan berlangsung hingga semua file sudah terbaca dan terjalankan.
+
+-lalu menambahkan crontab sesuai dengan waktu yang diinginkan
 
 3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password
@@ -20,13 +26,20 @@ sebagai berikut:
 
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut
 disimpan pada file bernama password1.txt
+
 b. Jika file password1.txt sudah ada maka password acak baru akan
 disimpan pada file bernama password2.txt dan begitu seterusnya.
+
 c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
+
 d. Password yang dihasilkan tidak boleh sama.
 
 ![soal3](https://user-images.githubusercontent.com/34019306/53232200-2ccf1b00-36bd-11e9-9708-1634cf2865a3.png)
+
+-Penggunaan flag dan while dikarenakan kita tidak tau parameter penyelesaian kode maka dari itu kita hanya menggunakan pengkondisian menggunakan flag dan menghentikan proses jika sudah menyelesaikan task yang diinginkan dengan break
+
+-
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
@@ -36,13 +49,19 @@ berikut:
 a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan
 pukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki
 urutan ke 12+2 = 14.
+
 b. Hasilnya huruf b menjadi huruf n karena huruf n adalah huruf ke
 empat belas, dan seterusnya.
+
 c. setelah huruf z akan kembali ke huruf a
+
 d. Backup file syslog setiap jam.
+
 e. dan buatkan juga bash script untuk dekripsinya.
 
 ![soal4](https://user-images.githubusercontent.com/34019306/53232391-98b18380-36bd-11e9-83f4-d5a733ee1a3b.png)
+
+- Pertama 
 
 ![soal4](https://user-images.githubusercontent.com/34019306/53232530-db735b80-36bd-11e9-985a-5a6700d21521.png)
 
