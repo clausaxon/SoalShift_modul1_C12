@@ -1,22 +1,5 @@
 # SoalShift_modul1_C12
 
-2. Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
-untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.
-Laporan yang diminta berupa:
-
-a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun
-2012.
-
-Ketikkan syntax awk di terminal, seperti ini:
-![2a - shift 1](https://user-images.githubusercontent.com/47876805/53220703-7ce7b680-3698-11e9-9a1d-63fc63716bd1.png)
-
-b. Tentukan tiga product line yang memberikan penjualan(quantity)
-terbanyak pada soal poin a.
-
-c. Tentukan tiga product yang memberikan penjualan(quantity)
-terbanyak berdasarkan tiga product line yang didapatkan pada soal
-poin b.
-
 5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
 
