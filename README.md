@@ -6,7 +6,10 @@ file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adala
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
 
-![ SoalShift_modul1_C12/Images/Screenshot from 2019-02-22 22-24-20.png ]
+![soal1](https://raw.githubusercontent.com/clausaxon/SoalShift_modul1_C12/Images/Screenshot from 2019-02-22 22-24-20.png )
+-Saya menggunakan looping for karena saat saya lihat foldernya, isi filenya tidak lebih dari 97 image maka dari itu saya menggunakan parameter itu.
+-awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt.
+
 
 
 3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
@@ -16,6 +19,8 @@ sebagai berikut:
 
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut
 disimpan pada file bernama password1.txt
+-Menggunakan  
+
 b. Jika file password1.txt sudah ada maka password acak baru akan
 disimpan pada file bernama password2.txt dan begitu seterusnya.
 c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
