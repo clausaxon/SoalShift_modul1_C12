@@ -59,7 +59,11 @@ d. Password yang dihasilkan tidak boleh sama.
 
 ![soal3](https://user-images.githubusercontent.com/34019306/53234202-981aec00-36c1-11e9-9202-ab9fb9f19277.png)
 
-- 
+- variable randompas berisi sintaks dengan pipe yang berguna untuk menggenerate nama password yang random dengan "tr -dc" dan "head -c" yang membatasi agar password hanya berisi alphabet dan int serta jumlah karakternya hanya 12
+
+- karena parameter penyelesaian script tidak menentu maka menggunakan looping while dan memberhentikan proses jika kondisi penyelesaian telah terpenuhi.
+
+- pertama kita menggunakan fungsi find untuk mencari apakah nama password sudah ada atau belom, jika belom maka nama file langsung mengikuti urutan n dan jika uda maka n di increment untuk nama file urutan selanjutnya.
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
