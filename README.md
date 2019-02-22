@@ -1,5 +1,5 @@
 # SoalShift_modul1_C12
-1. Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
+1.Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
 dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah
 nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh
 file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari
@@ -41,7 +41,7 @@ poin b.
 - head -n3 berarti mengambil data dari 3 baris pertama.
 - awk -F, '{print $2} berarti karena yang diminta tampilkan adalah produknya, maka yang dicetak hanya variabel j.
 
-3. Buatlah sebuah script bash yang dapat menghasilkan password secara acak
+3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password
 acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama
 sebagai berikut:
@@ -59,9 +59,9 @@ d. Password yang dihasilkan tidak boleh sama.
 
 ![soal3](https://user-images.githubusercontent.com/34019306/53234202-981aec00-36c1-11e9-9202-ab9fb9f19277.png)
 
--
+- 
 
-4. Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
+4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
 manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai
 berikut:
@@ -81,7 +81,17 @@ e. dan buatkan juga bash script untuk dekripsinya.
 
 ![soal4](https://user-images.githubusercontent.com/34019306/53232391-98b18380-36bd-11e9-83f4-d5a733ee1a3b.png)
 
--
+-Pertama kita memasukan 2 array , yaitu array1 untuk isi alphabet huruf besar dan array2 untuk alphabet huruf kecil
+
+-lalu menambahkan variable jam yaitu untuk mengakses int jam brp pada linux kita dan menambahkan variable putar yang berguna untuk criteria pada soal a dan b.
+
+-array3 adalah hasil gabungan 2xarray1 agar array berisi A-Z lalu blakangnya A-Z lagi sama seperti array4
+
+-array 5 adalah saat array 1 kita ubah bentuknya dengan sintaks putar tadi, jadinya alphabet mulai dari urutan n jam.
+
+-tujuan kita adalah mencapai sintaks tr yang membandingkan range 2 array yang nantinya bash men translate sendiri perubahan alphabet dari tiap line file (bentuk sintaks : tr "arr1[@]" "arr2[@]") -> mksd dari sintaks adalah semua yang ada di array 1 posisinya di translate menjadi seperti array 2.
+
+-lalu memasukan semua bakup syslog menuju direktori sekarang menggunakan sintaks tadi.
 
 ![soal4](https://user-images.githubusercontent.com/34019306/53232530-db735b80-36bd-11e9-985a-5a6700d21521.png)
 
