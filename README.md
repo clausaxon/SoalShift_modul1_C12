@@ -6,7 +6,7 @@ file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adala
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
 
-SoalShift_modul1_C12/Images/Screenshot from 2019-02-22 22-24-20.png 
+![ SoalShift_modul1_C12/Images/Screenshot from 2019-02-22 22-24-20.png ]
 
 
 3.Buatlah sebuah script bash yang dapat menghasilkan password secara acak
