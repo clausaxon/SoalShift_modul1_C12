@@ -8,6 +8,7 @@ Hint: Base64, Hexdump
 
 ![soal1](https://user-images.githubusercontent.com/34019306/53231992-b92d0e00-36bc-11e9-8d8a-9811b613a913.png)
 -Saya menggunakan looping for karena saat saya lihat foldernya, isi filenya tidak lebih dari 97 image maka dari itu saya menggunakan parameter itu.
+
 -awk -v berguna agar saya bisa memasukan suatu variable di dalam sintaks awk, didalam kasus saya variable i yaitu sebagai counter urutan image yang mau didecrypt.
 
 
@@ -19,14 +20,13 @@ sebagai berikut:
 
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut
 disimpan pada file bernama password1.txt
-
 b. Jika file password1.txt sudah ada maka password acak baru akan
 disimpan pada file bernama password2.txt dan begitu seterusnya.
 c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
 d. Password yang dihasilkan tidak boleh sama.
 
-![soal3](https://user-images.githubusercontent.com/34019306/53231992-b92d0e00-36bc-11e9-8d8a-9811b613a913.png)
+![soal3](https://user-images.githubusercontent.com/34019306/53232200-2ccf1b00-36bd-11e9-9708-1634cf2865a3.png)
 
 4.Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
@@ -41,6 +41,11 @@ empat belas, dan seterusnya.
 c. setelah huruf z akan kembali ke huruf a
 d. Backup file syslog setiap jam.
 e. dan buatkan juga bash script untuk dekripsinya.
+
+![soal4](https://user-images.githubusercontent.com/34019306/53232391-98b18380-36bd-11e9-83f4-d5a733ee1a3b.png)
+
+![soal4](https://user-images.githubusercontent.com/34019306/53232530-db735b80-36bd-11e9-985a-5a6700d21521.png)
+
 
 
 5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
